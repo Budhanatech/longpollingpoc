@@ -1,7 +1,7 @@
 {
-  "name": "gwdemov2",
+  "name": "longpollingpoc",
   "version": "0.0.1",
-  "description": "GWDemo",
+  "description": "Long Polling POC",
   "keywords": [
     "loopback-application",
     "loopback"
@@ -25,8 +25,8 @@
     "test": "lb-mocha --allow-console-logs \"dist/__tests__\"",
     "posttest": "npm run lint",
     "test:dev": "lb-mocha --allow-console-logs dist/__tests__/**/*.js && npm run posttest",
-    "docker:build": "docker build -t gwdemov2 .",
-    "docker:run": "docker run -p 3000:3000 -d gwdemov2",
+    "docker:build": "docker build -t longpollingpoc .",
+    "docker:run": "docker run -p 3000:3000 -d longpollingpoc",
     "prestart": "npm run rebuild",
     "start": "node -r source-map-support/register .",
     "clean": "lb-clean dist *.tsbuildinfo .eslintcache",
@@ -36,7 +36,7 @@
     "type": "git",
     "url": ""
   },
-  "author": "Preetsingh <panesarpreetsingh1@gmail.com>",
+  "author": "Budhana Tech, LLP <budhanatech@gmail.com>",
   "license": "",
   "files": [
     "README.md",

@@ -1,4 +1,4 @@
-# GWdemo
+# Long Polling POC
 
 This application is build on top of Loopback, the main aim of this application is
 to fetch data from an external datasource i.e an API and store it in the underlying

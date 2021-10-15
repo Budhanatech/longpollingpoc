@@ -10,7 +10,7 @@ const dbconfig = {
   port: 27017,
   user: config.DB_USER,
   password: config.DB_PASS,
-  database: 'gwdemov2',
+  database: 'longpollingpoc',
   useNewUrlParser: true,
 };
 
@@ -21,8 +21,7 @@ const dbconfig = {
 @lifeCycleObserver('datasource')
 export class MongodbDataSource
   extends juggler.DataSource
-  implements LifeCycleObserver
-{
+  implements LifeCycleObserver {
   static dataSourceName = 'mongodb';
   static readonly defaultConfig = dbconfig;
 
